@@ -17,4 +17,4 @@ if e and X == [0,0]:
 elif e:
     X = np.array(X).reshape(1,-1)
     y_pred = model.predict(X)
-    st.success(f"Sale Prediction: {y_pred[0]}", icon = "💵")
+    st.success(f"Sale Prediction: {y_pred[0]}💵")
