@@ -8,9 +8,9 @@ st.title('Sales Prediction')
 c1,c2 = st.columns(2)
 X = []
 with c1:
-    X.append(st.number_input('TV', min_value = 0))
+    X.append(st.number_input('TV', min_value = 0.00))
 with c2:
-    X.append(st.number_input('Radio', min_value = 0))
+    X.append(st.number_input('Radio', min_value = 0.00))
 e = st.button('Predict', use_container_width = True)
 if e and X == [0,0]:
     st.error('Please input TV or Radio ads')
